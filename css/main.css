@@ -116,7 +116,7 @@ header h3 {
 /*----------------------------------
   Main
 ------------------------------------*/
-#white-background{background-color: white;}
+.white-background{background-color: white;}
 
 main,
 .main {
@@ -126,9 +126,11 @@ main,
 
 .section {
   position: relative;
+  height: 100vh;
 }
-section.san-francisco {
-  margin-top: 100px;
+section.intro {
+  padding-top: 100px;
+  
 }
 
 
@@ -136,7 +138,7 @@ section.san-francisco {
   position: absolute;
   width: 100%;
   height: auto;
-  margin-top: 100px;
+  padding-top: 30px;
 }
 .absolute.above {
   z-index: 2;
@@ -148,6 +150,12 @@ section.san-francisco {
   color: #F0F0F0;
   z-index: -1;
 }
+
+.phone_preview{
+	width: 60%;
+}
+
+
 .lg-green {
   width: 60px;
   height: 60px;
@@ -156,21 +164,19 @@ section.san-francisco {
   /*margin-left: -80px;*/
   margin-top: 200px;
 }
-.sm-green {
-  width: 60px;
-  height: 60px;
+.head1 {
+  /*width: 30px;
+  height: 30px;
   background: #00F1C9;
   border-radius: 12px;
-  /*margin-left: -30px;*/
+  margin-left: -30px;*/
   margin-top: 200px;
+  position: absolute;
 }
-.sm-purple {
-  width: 60px;
-  height: 60px;
-  background: #5000F1;
-  border-radius: 12px;
-  margin-left: -30px;
+.head2 {
+
   margin-top: 400px;
+  /*position: absolute;*/
 }
 .xs-green {
   width: 60px;
