@@ -5,6 +5,7 @@ html, body {
   text-rendering: optimizeLegibility;
   color: #222;
   overflow-x: hidden;
+  background-image: url("../images/map.png");
 }
 h4 {
   font-size: 22px;
