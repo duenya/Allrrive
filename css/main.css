@@ -116,10 +116,12 @@ header h3 {
 /*----------------------------------
   Main
 ------------------------------------*/
+#white-background{background-color: white;}
 
 main,
 .main {
   overflow: hidden;
+
 }
 
 .section {
