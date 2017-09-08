@@ -93,9 +93,9 @@ header h3 {
   position: fixed;
   width: 100%;
 }
-.grid-line {
+.white-background {
   height: 100vh;
-  border-left: 1px solid #ccc;
+  background-color: white;
 }
 
 
@@ -116,7 +116,6 @@ header h3 {
 /*----------------------------------
   Main
 ------------------------------------*/
-.white-background{background-color: white;}
 
 main,
 .main {
