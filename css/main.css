@@ -29,7 +29,7 @@ a:visited {
 .homesection  h2 {
   font-size: 15px;
   letter-spacing: 0.15em;
-  margin-top: 70px;
+  margin-top: 30px;
   clear: #022D41;
 }
 .homesection  a h2 {
@@ -47,10 +47,11 @@ a:visited {
   width: 46px;
   height: 6px;
   background: #00F1C9;
+  margin-bottom: 20px;
 }
 .homesection .text{
-   vertical-align: middle;
-   display: table-cell;
+   position:absolute;
+   top: 40%;
    
 }
 .homesection h1 {
