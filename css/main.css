@@ -94,7 +94,7 @@ header h3 {
   width: 100%;
 }
 .white-background {
-  height: 100vh;
+  
   background-color: white;
 }
 
@@ -111,7 +111,60 @@ header h3 {
   margin-top: -220px;
   margin-left: 100px;
 }
+@keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    
+    to {
+        background-position: 9000%;
+    }
+}
 
+@-webkit-keyframes slideleft {
+    from {
+        background-position: 0%;
+    }
+    to {
+        background-position: 9000%;
+    }
+}
+#bg2 {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    animation: slideleft 600s infinite linear;
+    -webkit-animation: slideleft 600s infinite linear;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    position: fixed;
+    background-size: auto 100%;
+
+}
+#bg1 {
+    background-image: url('../images/background1.png');
+    background-repeat: repeat-x;
+    animation: slideleft 800s infinite linear;
+    -webkit-animation: slideleft 800s infinite linear;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    position: fixed;
+    background-size: auto 100%;
+
+}
+#bg3 {
+    background-image: url('../images/background3.png');
+    background-repeat: repeat-x;
+    animation: slideleft 300s infinite linear;
+    -webkit-animation: slideleft 300s infinite linear;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: fixed;
+    background-size: auto 100%;
+
+}
 
 /*----------------------------------
   Main
@@ -127,10 +180,7 @@ main,
   position: relative;
   height: 100vh;
 }
-section.intro {
-  padding-top: 100px;
-  
-}
+
 
 
 .absolute {
