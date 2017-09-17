@@ -172,32 +172,35 @@ a:visited {
     position: relative;
 }
 
-#dress-up
-{
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    visibility: visible; 
-    background-image: url('../images/dress-up.png');
-    -webkit-animation: moveDress 5s linear; /* Safari 4.0 - 8.0 */
-    animation: moveDress 5s linear;
-    position: absolute;
-    background-size: cover;
+/*background transport animation*/
+@keyframes dawdling {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+@-webkit-keyframes dawdling {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+
+.dawdling{
     height: 100vh;
     overflow: hidden;
+    position: relative;
 
 }
-@keyframes moveDress 
-{
-  from {visibility: visible;transform: translateY(100%);}
-  to { visibility: visible;transform: translateY(0%);}
+#dressup {
+    left: 0;
+    bottom: 0;
+    background-image: url('../images/dress-up.png');
+    background-repeat: no-repeat;
+    animation: dawdling 10s linear;
+    -webkit-animation: dawdling 10s linear;
+    width: 100%;
+    height: 350%;
+    position: absolute;
+    background-size: contain;
 }
-@-webkit-keyframes moveDress 
-{
-  from {visibility: visible; -webkit-transform: translateY(100%);}
-  to { visibility: visible; -webkit-transform: translateY(0%);}
-}
+
 /*----------------------------------
   Background Grid
 ------------------------------------*/
