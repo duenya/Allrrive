@@ -40,7 +40,6 @@ a:visited {
 
 .bg{
     height: 100vh;
-
     overflow: hidden;
     position: relative;
 
@@ -161,7 +160,44 @@ a:visited {
 
 
 
+/*----------------------------------
+  Problem section 
+------------------------------------*/
+#section2-1{
+  background-color: #DAECF3;
+  margin-right:-15px; 
+  margin-left:-15px;
+      height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
 
+#dress-up
+{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    visibility: visible; 
+    background-image: url('../images/dress-up.png');
+    -webkit-animation: moveDress 5s linear; /* Safari 4.0 - 8.0 */
+    animation: moveDress 5s linear;
+    position: absolute;
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+
+}
+@keyframes moveDress 
+{
+  from {visibility: visible;transform: translateY(100%);}
+  to { visibility: visible;transform: translateY(0%);}
+}
+@-webkit-keyframes moveDress 
+{
+  from {visibility: visible; -webkit-transform: translateY(100%);}
+  to { visibility: visible; -webkit-transform: translateY(0%);}
+}
 /*----------------------------------
   Background Grid
 ------------------------------------*/
