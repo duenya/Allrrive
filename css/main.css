@@ -212,13 +212,12 @@ a:visited {
     position: relative;
 
 }
-#dress-up {
-      top:0;
-      bottom:0;
-      left:0;
-      right:0;
-      position: absolute;
-      background-size: cover;
+#dawdling_text {
+  top:10%; 
+  left: -100%;
+  z-index: 2;
+  overflow: hidden;
+    position: absolute;
 }
 
 /*----------------------------------

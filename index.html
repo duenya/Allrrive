@@ -114,19 +114,23 @@
           <div class="row">
             <div class="col-md-4 dawdling">
               <div id="dressup"></div>
+              <div id="dawdling_text">
+                <p align="center">
+                  Always having lots of preparations,<br>
+                  Choosing clothes,<br>
+                  Choosing Shoes,<br>
+                  Putting makeup,...<br>
+                  Or just Dawdling? <br>
+                </p>
+                <h2 align="center">And you get rush!</h2>
+              </div>
             </div>
-            <div class="col-md-6">
-              <p align="justify">
-                Always having lots of preparations,<br>
-                Choosing clothes,<br>
-                Choosing Shoes,<br>
-                Putting makeup,...<br>
-                Or just Dawdling? <br>
-              </p>
-              <h2 align="center">And you get rush!</h2>
+            <div class="col-md-4">
               
             </div>
-
+            <div class="col-md-4">
+              
+            </div>
           </div>
 
           </section>
@@ -217,10 +221,13 @@
     </script>
 
 <script>
-  window.onscroll = function() {myFunction()};
+  window.onscroll = function() {section2Animate()};
 
-function myFunction() {
-       jQuery('#dressup').animate({left: '0'},6000);
+function section2Animate() {
+    $('#dressup').animate({left: '0'},6000, 
+      function () {
+        $('#dawdling_text').animate({left: '30px'});
+    });
 }
 
 </script> 
