@@ -26,6 +26,14 @@ a:visited {
   color: #5000F1;
 }
 
+
+.navigation{
+  z-index:10;
+  position: fixed;
+  right:30px;
+  top:30%;
+}
+
 /*----------------------------------
   Home Section (section 1)
 ------------------------------------*/
@@ -163,11 +171,11 @@ a:visited {
 /*----------------------------------
   Problem section 
 ------------------------------------*/
-#section2-1{
+#section2{
   background-color: #DAECF3;
   margin-right:-15px; 
   margin-left:-15px;
-      height: 100vh;
+
     overflow: hidden;
     position: relative;
 }
