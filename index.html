@@ -105,14 +105,14 @@
           </div>
         </section>
         <!--Problem section/section 2-->
-        <section class="section" id="section2-1">
+        <section class="section" id="section2-1" onscroll="animate()">
           <div class="row">
             <div class="col-md-12" align="center">
               <h1> We know your Problem </h1>
             </div>
           </div>
           <div class="row">
-            <div class="col-md-6 dawdling">
+            <div class="col-md-4 dawdling">
               <div id="dressup"></div>
             </div>
             <div class="col-md-6">
@@ -216,7 +216,14 @@
       });
     </script>
 
+<script>
+  window.onscroll = function() {myFunction()};
 
+function myFunction() {
+       jQuery('#dressup').animate({left: '0'},6000);
+}
+
+</script> 
 
   </body>
 </html>

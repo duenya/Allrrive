@@ -173,6 +173,7 @@ a:visited {
 }
 
 /*background transport animation*/
+/*
 @keyframes dawdling {
   0% {transform: translateY(100%);}
   100% {transform: translateY(0%);}
@@ -181,6 +182,29 @@ a:visited {
   0% {transform: translateY(100%);}
   100% {transform: translateY(0%);}
 }
+*/
+
+@keyframes dawdling {
+    0%{transform: translateX(-100%); } 
+}
+@-webkit-keyframes dawdling {
+  0%{transform: translateX(-100%); } 
+}
+
+
+#dressup {
+
+    background-image: url('../images/dress-up.png');
+    /*
+    background-repeat: repeat-x;
+    animation: dawdling 10s linear;
+    -webkit-animation: dawdling 10s linear;*/
+    width: 416vh;
+    left: -416vh;
+    position: absolute;
+    height: 100vh;
+    background-size: cover;
+}
 
 .dawdling{
     height: 100vh;
@@ -188,17 +212,13 @@ a:visited {
     position: relative;
 
 }
-#dressup {
-    left: 0;
-    bottom: 0;
-    background-image: url('../images/dress-up.png');
-    background-repeat: no-repeat;
-    animation: dawdling 10s linear;
-    -webkit-animation: dawdling 10s linear;
-    width: 100%;
-    height: 350%;
-    position: absolute;
-    background-size: contain;
+#dress-up {
+      top:0;
+      bottom:0;
+      left:0;
+      right:0;
+      position: absolute;
+      background-size: cover;
 }
 
 /*----------------------------------
