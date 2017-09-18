@@ -8,10 +8,15 @@
     <meta name="viewport" content="width=device-width">
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.min.css'>
 
+
+      <link rel="stylesheet" href="css/chat.css">
 
     <!-- Booooooootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -116,17 +121,35 @@
               <div id="dressup"></div>
               <div id="dawdling_text">
                 <p align="center">
-                  Always having lots of preparations,<br>
                   Choosing clothes,<br>
-                  Choosing Shoes,<br>
+                  picking up shoes,<br>
                   Putting makeup,...<br>
-                  Or just Dawdling? <br>
+                  Dawdling? <br>
                 </p>
                 <h2 align="center">And you get rush!</h2>
               </div>
             </div>
-            <div class="col-md-4">
-              
+            <div class="col-md-4 late">
+              <div class="chat">
+                <div class="chat-title">
+                  <h1>John Smith</h1>
+                  <h2>Online</h2>
+                  <figure class="avatar">
+                    <img src="images/portrait.jpg" /></figure>
+                </div>
+                <div class="messages">
+                  <div class="messages-content">
+                    <div class="message new"><figure class="avatar"><img src="images/portrait.jpg"></figure>WHERE ARE YOU!? You are 20 mins late!<div class="timestamp">10:21</div></div>
+                    <div class="message message-personal new">almost there!<div class="timestamp">10:22</div></div>
+                    <div class="message new"><figure class="avatar"><img src="images/portrait.jpg"></figure>Really?<div class="timestamp">10:22</div></div>
+                  </div>
+                </div>
+                <div class="message-box">
+                  <textarea type="text" class="message-input" placeholder="Type message..."></textarea>
+                  <button type="submit" class="message-submit">Send</button>
+                </div>
+
+              </div>
             </div>
             <div class="col-md-4">
               
@@ -231,6 +254,8 @@ function section2Animate() {
 }
 
 </script> 
+<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
 
+    <script  src="js/chat.js"></script>
   </body>
 </html>

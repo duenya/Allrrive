@@ -217,9 +217,13 @@ a:visited {
   left: -100%;
   z-index: 2;
   overflow: hidden;
-    position: absolute;
+  position: absolute;
 }
-
+.late{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
 /*----------------------------------
   Background Grid
 ------------------------------------*/
