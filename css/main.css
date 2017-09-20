@@ -34,6 +34,23 @@ a:visited {
   top:30%;
 }
 
+@keyframes test {
+    0%{transform: translateY(10%); } 
+    100%{transform: translateY(90%); } 
+}
+@-webkit-keyframes test {
+  0%{transform: translateY(10%); } 
+  100%{transform: translateY(90%); } 
+}
+.testing{
+    top: 10%;
+    position: absolute;
+    color: red;
+    animation: test 10s infinite linear;
+    -webkit-animation: test 10s infinite linear;
+    height: 100%;
+}
+
 /*----------------------------------
   Home Section (section 1)
 ------------------------------------*/
@@ -87,7 +104,9 @@ a:visited {
     background-size: auto 100%;
 
 }
-
+.col-sm-12 .homesection h1{
+  font-size: 24px;
+}
 
 /*text layer*/
 
@@ -273,7 +292,6 @@ footer
 
 footer .icon {
   padding-top: 3px;
-  background-color: #022d41;
   overflow: auto;
   display: table;
   margin: 0 auto;
