@@ -64,7 +64,7 @@ a:visited {
 }
 
 .bg{
-    height: 100vh;
+    height: 85vh;
     overflow: hidden;
     position: relative;
 
@@ -75,7 +75,7 @@ a:visited {
     animation: slideleft 600s infinite linear;
     -webkit-animation: slideleft 600s infinite linear;
     width: 3000%;
-    height: 100vh;
+    height: 85vh;
     /*z-index: 2;*/
     position: absolute;
     background-size: auto 100%;
@@ -86,7 +86,7 @@ a:visited {
     animation: slideleft 800s infinite linear;
     -webkit-animation: slideleft 800s infinite linear;
     width: 3000%;
-    height: 100vh;
+    height: 85vh;
     position: absolute;
     /*z-index: 1;*/
     background-size: auto 100%;
@@ -98,9 +98,9 @@ a:visited {
     animation: slideleft 300s infinite linear;
     -webkit-animation: slideleft 300s infinite linear;
     width: 3000%;
-    height: 100vh;
+    height: 85vh;
     position: absolute;
-    /*z-index: 3;*/
+    /*z-index: 0;*/
     background-size: auto 100%;
 
 }
@@ -114,6 +114,8 @@ a:visited {
   position: absolute;
   width: 100%;
   margin-left:-15px; 
+  background-color: rgba(255,255,255,0.75);
+  height: inherit;
 }
 
 /*our team*/
@@ -158,15 +160,15 @@ a:visited {
 /*left part text*/
 .homesection .text{
    position:absolute;
-   padding-top: 30vh;
+   padding-top: 15vh;
    
 }
 .homesection .app_name{
-  position:absolute;
+   position:absolute;
    width: 100%;
    margin-left:-15px;
 }
-.homesection .app_name img{
+.homesection .app_name .logo{
    width: 20%;
 }
 .homesection h1 {
@@ -180,16 +182,23 @@ a:visited {
 .homesection .text h2 {
   font-size: 15px;
   letter-spacing: 0.15em;
-  margin-top: 30px;
-  clear: #022D41;
+  margin-top: 10px;
+}
+.intro_text{
+  width:80%;
+  margin: 0 auto;
+  /*text-shadow: 1px 1px 2px #000000;*/
+  color: #022D41;
 }
 
 /*phone resize*/
 .phone_size{
-  max-width: 60% !important;
+  width: 60%;
 }
 
-
+.first_bubble{
+  height: 15vh;
+}
 
 /*----------------------------------
   Problem section 
@@ -331,7 +340,7 @@ footer .icon a i {
 }
 .white-background {
   overflow: hidden;
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(255,255,255);
 }
 
 
@@ -401,7 +410,8 @@ main,
   background: #00F1C9;
   border-radius: 12px;
   margin-left: -30px;*/
-  margin-top: 200px;
+  top:50%
+  margin-top: 5px;
   position: absolute;
 }
 .head2 {
