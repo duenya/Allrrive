@@ -111,14 +111,14 @@ a:visited {
 /*text layer*/
 
 .homesection{
-  /*z-index: 4;*/
   position: absolute;
   width: 100%;
+  margin-left:-15px; 
 }
 
 /*our team*/
 .homesection  a h2 {
-    font-size: 15px;
+  font-size: 15px;
   letter-spacing: 0.15em;
   margin-top: 30px;
   color: #022D41;
@@ -130,7 +130,7 @@ a:visited {
   color: #fff;
   margin-left: 10px;
 }
-.homesection .white-block {
+.homesection .underline {
   margin-top: 10px;
   width: 46px;
   height: 6px;
@@ -138,19 +138,17 @@ a:visited {
   margin-bottom: 20px;
 }
 
-.homesection .title a {
+.homesection .team a {
   display: inline-block;
   margin-top: 6px;
   margin-right: -70px;
-  /*background: #222;
-  padding: 26px 80px;*/
   color: #fff;
   border-radius: 12px;
   font-size: 26px;
   letter-spacing: 0.2em;
   transition: all 300ms cubic-bezier(0.68, -0.1, 0.265, 1.55);
 }
-.homesection .title a:hover {
+.homesection .team a:hover {
   margin-top: 6px;
   margin-right: -80px;
   padding: 0px 10px;
@@ -160,17 +158,23 @@ a:visited {
 /*left part text*/
 .homesection .text{
    position:absolute;
-   top: 40%;
+   padding-top: 30vh;
    
+}
+.homesection .app_name{
+  position:absolute;
+   width: 100%;
+   margin-left:-15px;
+}
+.homesection .app_name img{
+   width: 20%;
 }
 .homesection h1 {
   color: #1AA6B7;
   font-family: SignPainter;
   font-size: 96px;
-  font-weight: 900;
-  letter-spacing: 0.1em;
   margin: 0 auto;
-  top: 50%;
+  text-align: center;
 }
 
 .homesection .text h2 {
