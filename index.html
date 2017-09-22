@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <!-- Booooooootstrap -->
 
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -33,14 +33,14 @@
   </head>
 
 
-  <body>
+  <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!--side navigation-->
     <div class="container-fluid navigation visible-sm visible-md visible-lg">
       <div class="row">
-        <nav class="col-sm-2" id="myScrollspy">
+        <nav class="Scroll" id="myScrollspy">
           <ul class="nav nav-pills nav-stacked">
-            <li><a href="#section1">Home</a></li>
-            <li><a href="#section2">Mutiple Alert</a></li>
+            <li class="active"><a href="#section1">Home</a></li>
+            <li><a href="#section2">Multiple Reminder</a></li>
             <li><a href="#section3">Map View</a></li>
             <li><a href="#section4">Traffic detection</a></li>
             <li><a href="#section5">Download</a></li>
@@ -79,6 +79,7 @@
         <div class="row">
           <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 bg white-background">
             <!--trasportation running background-->
+            <div id="bg0"></div>
             <div id="bg1"></div>
             <div id="bg2"></div>
             <div id="bg3"></div>
@@ -168,24 +169,20 @@
               <p>Err...I'm I'm on the way there.</p>
             </div>
           </div>
-          <div class="col-md-2 col-xs-2">
-            <div class="john rellax" data-rellax-speed="-4">
-              <img src="images/John.jpg" class="img-responsive center-block"  alt="person-john">
-            </div>
-          </div>
         </div>
         <div class="row">
           <div class="col-md-offset-2 col-md-8 col-xs-12 section3bg">
+            <div class="col-md-6 text-center text">
+              <h1>Map View</h1>
+              <h2>no more execuse</h2>
+              <p>Allrrive helps you know where friends really are.<br>
+                Of course, only when you using it.<br>
+                Also, you will know how far and how much time they still need.<br>
+                No more unlimited waiting in the meeting point!</p>
+            </div>
             <div class="col-md-6 Map">
               <img src="images/intro_preview.png" class="phone_size img-responsive center-block"  alt="">
             </div> 
-            <div class="col-md-6 text-center text">
-              <h1>Map View, no more execuse</h1>
-              <p>There are mutiple tasks before meeting.
-                Get up, Prepare, leave your place, catch bus...etc.
-                If something wrong, you will get late, or...
-              you will need to wait for your friends.</p>
-            </div>
           </div>
         </div>
         <div class="row">
@@ -203,7 +200,7 @@
         <div class="row ">
           <div class="col-md-offset-6 col-md-4 col-xs-10 bubble">
             <div class="speech-bubbleR" id="s4t">
-              <p><i>Ring* </i> Oh, Traffic? I should leave 10m earlier.</p>
+              <p><i>Ring* </i> Oh, Traffic? I should leave 10mins earlier.</p>
             </div>
           </div>
         </div>
@@ -333,7 +330,7 @@
       else {
         $('#s2b').fadeOut();
       }
-      if (JohnP > s3t-75 && JohnP < s3t+0.15*W+75) {
+      if (JohnP > s3t-50 && JohnP < s3t+0.15*W+75) {
         $('#s3t').fadeIn();
       } 
       else {
@@ -345,7 +342,7 @@
       else {
         $('#s3b').fadeOut();
       }
-      if (EricP > s4t-75 && EricP < s4t+0.15*W+75) {
+      if (JohnP > s4t-75 && JohnP < s4t+0.15*W+75) {
         $('#s4t').fadeIn();
       } 
       else {
