@@ -29,6 +29,9 @@ a:visited {
   color: #5000F1;
 }
 
+.section {
+  position: relative;
+}
 /*----------------------------------
   Side nav
 ------------------------------------*/
@@ -183,7 +186,8 @@ a:visited {
 
 /*phone resize*/
 .phone_size{
-  width: 60%;
+  height: 60vh;
+
 }
 
 
@@ -209,89 +213,152 @@ a:visited {
 
 
 /*----------------------------------
-  Problem section 
+  reminder section 
 ------------------------------------*/
 #section2{
-  /*background-color: #DAECF3;*/
-  margin-right:-15px; 
-  margin-left:-15px;
-  overflow: hidden;
-  position: relative;
-  padding-top: 15vh;
-  
-}
-
-#section3{
-  /*background-color: #DAECF3;*/
   margin-right:-15px; 
   margin-left:-15px;
   overflow: hidden;
   position: relative;
 }
-#section4{
-  /*background-color: #DAECF3;*/
-  margin-right:-15px; 
-  margin-left:-15px;
-  overflow: hidden;
-  position: relative;
-}
-.MutipleAlert
+.section2bg
 {
-  background-color: rgba(255,255,255,0.75);
+  background-color: rgba(178,237,206,0.75);
+}
+.Reminder
+{
+  padding-top: 5%;
   height: 70vh;
 }
-/*background transport animation*/
-/*
-@keyframes dawdling {
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(0%);}
-}
-@-webkit-keyframes dawdling {
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(0%);}
-}
-*/
 
-@keyframes dawdling {
-    0%{transform: translateX(-100%); } 
+.section2bg .text
+{
+  padding-top: 5%;
+  height: 100%;
 }
-@-webkit-keyframes dawdling {
-  0%{transform: translateX(-100%); } 
-}
+.section2bg h1{
+  padding-top: 5px;
+  letter-spacing: 0.05em;
+  color: #295ea4;
+ font-family: 'Comfortaa', cursive;
 
 
-#dressup {
+}
+.section2bg h2{
+  letter-spacing: 0.05em;
+  color: #ef6034;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.section2bg p{
 
-    background-image: url('../images/dress-up.png');
-    /*
-    background-repeat: repeat-x;
-    animation: dawdling 10s linear;
-    -webkit-animation: dawdling 10s linear;*/
-    width: 416vh;
-    left: -416vh;
-    position: absolute;
-    height: 100vh;
-    background-size: cover;
+  font-size: medium;
+  color: #484848;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
 }
 
-.dawdling{
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
 
-}
-#dawdling_text {
-  top:10%; 
-  left: -100%;
-  z-index: 2;
+
+
+/*----------------------------------
+  map section 
+------------------------------------*/
+#section3{
+  margin-right:-15px; 
+  margin-left:-15px;
   overflow: hidden;
-  position: absolute;
+  position: relative;
 }
-.late{
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
+.section3bg
+{
+  background-color: rgba(178,237,206,0.75);
 }
+.Map
+{
+  padding-top: 5%;
+  height: 70vh;
+}
+
+.section3bg .text
+{
+  padding-top: 5%;
+  height: 100%;
+}
+.section3bg h1{
+  padding-top: 5px;
+  letter-spacing: 0.05em;
+  color: #295ea4;
+ font-family: 'Comfortaa', cursive;
+
+
+}
+.section3bg h2{
+  letter-spacing: 0.05em;
+  color: #ef6034;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.section3bg p{
+
+  font-size: medium;
+  color: #484848;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+/*----------------------------------
+  traffic section 
+------------------------------------*/
+#section4{
+  margin-right:-15px; 
+  margin-left:-15px;
+  overflow: hidden;
+  position: relative;
+}
+.section4bg
+{
+  background-color: rgba(178,237,206,0.75);
+}
+.Traffic
+{
+  padding-top: 5%;
+  height: 70vh;
+}
+
+.section4bg .text
+{
+  padding-top: 5%;
+  height: 100%;
+}
+.section4bg h1{
+  padding-top: 5px;
+  letter-spacing: 0.05em;
+  color: #295ea4;
+ font-family: 'Comfortaa', cursive;
+
+
+}
+.section4bg h2{
+  letter-spacing: 0.05em;
+  color: #ef6034;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: large;
+}
+.section4bg p{
+
+  font-size: medium;
+  color: #484848;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+
+}
+
 
 /*----------------------------------
   Footer
@@ -357,6 +424,62 @@ footer .icon a i {
   padding-top: 18%;
 }
 
+
+
+/*background transport animation*/
+/*
+@keyframes dawdling {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+@-webkit-keyframes dawdling {
+  0% {transform: translateY(100%);}
+  100% {transform: translateY(0%);}
+}
+*/
+
+@keyframes dawdling {
+    0%{transform: translateX(-100%); } 
+}
+@-webkit-keyframes dawdling {
+  0%{transform: translateX(-100%); } 
+}
+
+
+#dressup {
+
+    background-image: url('../images/dress-up.png');
+    /*
+    background-repeat: repeat-x;
+    animation: dawdling 10s linear;
+    -webkit-animation: dawdling 10s linear;*/
+    width: 416vh;
+    left: -416vh;
+    position: absolute;
+    height: 100vh;
+    background-size: cover;
+}
+
+.dawdling{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+#dawdling_text {
+  top:10%; 
+  left: -100%;
+  z-index: 2;
+  overflow: hidden;
+  position: absolute;
+}
+.late{
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+
 /*----------------------------------
   Background Grid
 ------------------------------------*/
@@ -396,10 +519,7 @@ main,
 
 }
 
-.section {
-  position: relative;
 
-}
 
 
 
