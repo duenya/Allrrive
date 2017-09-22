@@ -9,7 +9,7 @@
 
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:600,700,900' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
@@ -18,7 +18,6 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="images/fav.png"/>
-    <link rel="stylesheet" href="css/chat.css">
 
     <!-- Booooooootstrap -->
 
@@ -54,12 +53,12 @@
       <div class="row">
         <div class="col-md-2 col-xs-2">
           <div class="may rellax" data-rellax-speed="-8">
-            <img src="images/May.jpg" class="img-responsive center-block"  alt="person-may">
+            <img src="images/May.jpg" class="img-responsive center-block" id="May" alt="person-may">
           </div>
         </div>
         <div class="col-md-offset-8 col-md-2 col-xs-offset-8 col-xs-2">
           <div class="john rellax" data-rellax-speed="-5">
-             <img src="images/John.jpg" class="img-responsive center-block"  alt="person-john">
+             <img src="images/John.jpg" class="img-responsive center-block" id="John" alt="person-john">
           </div>
         </div>
         <div class="col-md-2 col-xs-2">
@@ -69,7 +68,7 @@
         </div>
         <div class="col-md-offset-8 col-md-2 col-xs-offset-8 col-xs-2">
           <div class="eric rellax" data-rellax-speed="-4">
-            <img src="images/Eric.jpg" class="img-responsive center-block"  alt="person-eric">
+            <img src="images/Eric.jpg" class="img-responsive center-block" id="Eric" alt="person-eric">
           </div>
         </div>
       </div>
@@ -118,9 +117,9 @@
           </div>
         </div>
         <!--avator talking-->
-        <div class="row ">
+        <div class="row">
           <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble">
-            <div class="speech-bubble">
+            <div class="speech-bubbleL" id="s1b">
               <p>Muh...So sleepy, but I should start preparing.</p>
             </div>
           </div>
@@ -129,9 +128,11 @@
 
       <!--Section 2 Tie the time-->
       <section class="section" id="section2">
-        <div class="row bubble">
-          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10">
-            <p>Let's see how's everyone going.</p>
+        <div class="row ">
+          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble">
+            <div class="speech-bubbleL" id="s2t">
+              <p>Let's see how's everyone going.</p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -149,9 +150,11 @@
             </div>     
           </div>
         </div>
-        <div class="row bubble">
-          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10">
-            <p>Hmm, John doesn't show as wake up, I should call him.</p>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble">
+            <div class="speech-bubbleL" id="s2b">
+              <p>Hmm, John doesn't show as wake up, I should call him.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -159,9 +162,11 @@
       <!--Section 3 Map Viw-->
 
       <section class="section" id="section3">
-        <div class="row bubble">
-          <div class="col-md-offset-6 col-md-4 col-xs-offset-2 col-xs-8">
-            <p>Err...I'm I'm on the way there.</p>
+        <div class="row">
+          <div class="col-md-offset-6 col-md-4 col-xs-10 bubble">
+            <div class="speech-bubbleR" id="s3t">
+              <p>Err...I'm I'm on the way there.</p>
+            </div>
           </div>
           <div class="col-md-2 col-xs-2">
             <div class="john rellax" data-rellax-speed="-4">
@@ -183,9 +188,11 @@
             </div>
           </div>
         </div>
-        <div class="row bubble">
-          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10">
-            <p>Ha! I know you are still at your place. Get up! Quick!</p>
+        <div class="row">
+          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble">
+            <div class="speech-bubbleL" id="s3b">
+              <p>Ha! I know you are still at your place. Get up! Quick!</p>
+            </div>
           </div>
         </div>
       </section>
@@ -193,9 +200,11 @@
 
      <!--Section 4 Traffic detection-->
       <section class="section" id="section4">
-        <div class="row bubble">
-          <div class="col-md-offset-6 col-md-4 col-xs-offset-2 col-xs-8">
-            <p>Ring... Oh, there's traffic and I should leave 10mins earlier? okok </p>
+        <div class="row ">
+          <div class="col-md-offset-6 col-md-4 col-xs-10 bubble">
+            <div class="speech-bubbleR" id="s4t">
+              <p><i>Ring* </i> Oh, Traffic? I should leave 10m earlier.</p>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -240,27 +249,80 @@
  
 </body>
     <!-- javascript -->
-    <script type="text/javascript" src="rellax.js"></script>
-    <script>
-    	var rellax = new Rellax('.rellax', {
-        // center: true
-      });
-    </script>
-
-<script>
-  window.onscroll = function() {section2Animate()};
-
-function section2Animate() {
-    $('#dressup').animate({left: '0'},6000, 
-      function () {
-        $('#dawdling_text').animate({left: '30px'});
+  <script type="text/javascript" src="rellax.js"></script>
+  <script>
+  	var rellax = new Rellax('.rellax', {
+      // center: true
     });
-}
+  </script>
 
-</script> 
-<script src='https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.3/jquery.mCustomScrollbar.concat.min.js'></script>
 
-    <script  src="js/chat.js"></script>
+  <script>
+    var W = $( window ).height();
+    //var final= $('#final');
+    // Returns height of HTML document
+    //var H = $( document ).height();
+    var May = $('#May');
+    var John = $('#John');
+    var Eric = $('#Eric');
+    var s1b = $('#s1b').parent().offset().top;
+    var s2t = $('#s2t').parent().offset().top;
+    var s2b = $('#s2b').parent().offset().top;
+    var s3t = $('#s3t').parent().offset().top;
+    var s3b = $('#s3b').parent().offset().top;
+    var s4t = $('#s4t').parent().offset().top;
+  //var positionL = goal.offset().left;
+    $(document).scroll(function() {
+      var MayP = May.offset().top;
+      var JohnP = John.offset().top;
+      var EricP = Eric.offset().top;
+      //var y = $(this).scrollTop();
+      if (MayP > (s1b-75) && MayP < s1b+0.15*W+75) {
+        $('#s1b').fadeIn();
+        $("#s1b").css("visibility", "visible");
+      } 
+      else {
+        $('#s1b').fadeOut();
+      }
+      if (MayP > s2t-75 && MayP < s2t+0.15*W+75) {
+        $('#s2t').fadeIn();
+      } 
+      else {
+        $('#s2t').fadeOut();
+      }
+      if (MayP > s2b-75 && MayP < s2b+0.15*W+75) {
+        $('#s2b').fadeIn();
+      } 
+      else {
+        $('#s2b').fadeOut();
+      }
+      if (JohnP > s3t-75 && JohnP < s3t+0.15*W+75) {
+        $('#s3t').fadeIn();
+      } 
+      else {
+        $('#s3t').fadeOut();
+      }
+      if (MayP > s3b-75 && MayP < s3b+0.15*W+75) {
+        $('#s3b').fadeIn();
+      } 
+      else {
+        $('#s3b').fadeOut();
+      }
+      if (EricP > s4t-75 && EricP < s4t+0.15*W+75) {
+        $('#s4t').fadeIn();
+      } 
+      else {
+        $('#s4t').fadeOut();
+      }
+    });
+
+
+  </script> 
+
+
+
+
+
       
   
 </html>
