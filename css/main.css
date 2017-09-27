@@ -374,7 +374,7 @@ position: absolute;
 }
 
 #reminder_bg {
-    background-image: url('../images/reminder_lg_bg.png');
+    background-image: url('../images/reminder_bg.png');
     background-position: center center;
     margin-left: -15px;
     width: 100%;
@@ -465,46 +465,90 @@ position: absolute;
   overflow: hidden;
   position: relative;
 }
-.section3bg
-{
-  /*background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
-  background-color: rgba(178,237,206,0.75);*/
-  background-color: #cde6c7;
+
+#map_bg {
+    background-image: url('../images/map_bg.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
-.Map
-{
-  padding-top: 5%;
-  height: 70vh;
+#map_lg_phone {
+    background-image: url('../images/map_lg_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
 
-.section3bg .text
-{
-  padding-top: 5%;
-  height: 100%;
+#map_sm_md_phone {
+    background-image: url('../images/map_sm_md_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
-.section3bg h1{
+#map_xs_phone {
+    background-image: url('../images/map_xs_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+
+.map{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.map .text{
+  position: absolute;
+  top: 35%;
+  padding-left: 20px;
+
+}
+
+.map h1{
   padding-top: 5px;
   letter-spacing: 0.05em;
-  color: #443b3d;
+  color: #295ea4;
  font-family: 'Comfortaa', cursive;
-
-
+ font-size: 4vh;
 }
-.section3bg h2{
+.map h2{
   letter-spacing: 0.05em;
-  color: #3C8058;
+  color: #ef6034;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: large;
+   font-size: 2.3vh;
 }
-.section3bg p{
+.map p{
 
-  font-size: medium;
-  color: #3e3e3e;
+  font-size: 1.7vh;
+  color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
 }
+.s3t{
+  position: absolute;
+  top: 20%;
+
+}
+.s3b{
+  position: absolute;
+  top: 75%;
+}
+
 
 /*----------------------------------
   traffic section 
