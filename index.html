@@ -35,6 +35,7 @@
 
   <body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
     <!--side navigation-->
+    <!--
     <div class="container-fluid navigation visible-sm visible-md visible-lg">
       <div class="row">
         <nav class="Scroll" id="myScrollspy">
@@ -47,7 +48,7 @@
           </ul>
         </nav>
       </div>
-    </div>
+    </div>-->
 
     <div class="container-fluid avator">
       <div class="row">
@@ -77,13 +78,16 @@
     <div class="container-fluid">
       <section class="section" id="section1">
         <div class="row">
-          <div class="col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 bg white-background">
+          <div class="col-md-12 col-sm-12 bg white-background">
             <!--trasportation running background-->
-            <div id="bg0"></div>
-            <div id="bg1"></div>
-            <div id="bg2"></div>
-            <div id="bg3"></div>
-
+            
+            <div id="bgSkyline"></div>
+            <div id="bgVehicle"></div>
+            <div id="bgTrain"></div>
+            <div id="bgTransparent"></div>
+            <div class="visible-lg" id="bgPhone_lg"></div>   
+            <div class="visible-sm visible-md" id="bgPhone_sm_md"></div>
+            <div class="visible-xs" id="bgPhone_xs"></div>
             <!-- homesection text area-->
             <div class="homesection">
               <!-- our team-->
@@ -95,9 +99,9 @@
               </div>
 
               <!-- huge app name-->
-              <div class="col-md-6 col-sm-12 col-xs-12 text">
+              <div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-6 col-xs-7 text">
                 <div class="app_name text-center">
-                  <img src="images/logo.png" class="logo img-responsive center-block logo visible-lg visible-md visible-xs">
+                  <img src="images/logo.png" class="logo img-responsive center-block logo visible-lg visible-md ">
                   <h1>Allrrive</h1>
                   <div class="intro_text text-center">
                     <h2 >Allrrive, a brand new way to make you no more rush for hanging out!</h2>
@@ -110,10 +114,6 @@
                   </div>
                 </div>
               </div> 
-              <!--phone view-->
-              <div class="col-md-offset-6 col-md-6 col-sm-12 visible-lg visible-md visible-sm">
-                <img src="images/intro_preview.png" class="phone_size img-responsive center-block"  alt="">
-              </div>
             </div>
           </div>
         </div>

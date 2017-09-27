@@ -73,65 +73,95 @@ a:visited {
 
 /*backgrounds are 85% screen high*/
 .bg{
-    height: 85vh;
+    height: 100vh;
     overflow: hidden;
     position: relative;
+    background-color: white;
 }
-#bg0 {
-    background-image: url('../images/bg.png');
-    background-repeat: repeat-x;
-    margin-left: -15px;
-    width: 100%;
-    height: 85vh;
-    position: absolute;
-    background-size: auto 100%;
-}
-#bg2 {
-    background-image: url('../images/background2.png');
-    background-repeat: repeat-x;
-    animation: slideleft 600s infinite linear;
-    -webkit-animation: slideleft 600s infinite linear;
-    width: 3000%;
-    height: 85vh;
-    position: absolute;
-    background-size: auto 100%;
-}
-#bg1 {
+#bgSkyline {
     background-image: url('../images/background1.png');
     background-repeat: repeat-x;
     animation: slideleft 800s infinite linear;
     -webkit-animation: slideleft 800s infinite linear;
     width: 3000%;
-    height: 85vh;
+    height: 100vh;
     position: absolute;
     background-size: auto 100%;
-
 }
-#bg3 {
+#bgVehicle {
+    background-image: url('../images/background2.png');
+    background-repeat: repeat-x;
+    animation: slideleft 600s infinite linear;
+    -webkit-animation: slideleft 600s infinite linear;
+    width: 3000%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+#bgTrain {
     background-image: url('../images/background3.png');
     background-repeat: repeat-x;
     animation: slideleft 300s infinite linear;
     -webkit-animation: slideleft 300s infinite linear;
     width: 3000%;
-    height: 85vh;
+    height: 100vh;
     position: absolute;
     background-size: auto 100%;
 
 }
+#bgTransparent {
+    background-image: url('../images/bg.png');
+    background-position: center center;
+    opacity: 0.6;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+#bgPhone_lg {
+    background-image: url('../images/phonebg_lg.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+#bgPhone_sm_md {
+    background-image: url('../images/phonebg_sm_md.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+#bgPhone_xs {
+    background-image: url('../images/phonebg_xs.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+
+
 
 /*text & phone layer*/
 
 .homesection{
-  position: absolute;
+  position: relative;
   width: 100%;
-  margin-left:-15px; 
-  background-color: rgba(255,255,255,0.5);
-  height: inherit;
+
+  /*background-color: rgba(255,255,255,0.5);*/
+  height: 100vh;
 }
 
 /*our team*/
 .homesection  a h2 {
-  font-size: 15px;
+  font-size: 1.8vh;
   letter-spacing: 0.15em;
   margin-top: 30px;
   color: #022D41;
@@ -170,31 +200,32 @@ a:visited {
 
 /*left part - text*/
 .homesection .text{
-   position:absolute;
-   padding-top: 15vh;
-   
+position: absolute;
+  top: 30%;
+
 }
 
 .homesection .app_name .logo{
-   width: 20%;
+  width: 10vh;
 }
 
 .homesection .app_name{
    position:absolute;
    width: 100%;
    margin-left:-15px;
+
 }
 
 .homesection h1 {
   color: #1AA6B7;
   font-family: SignPainter;
-  font-size: 96px;
+  font-size: 12vh;
   margin: 0 auto;
   text-align: center;
 }
 
 .homesection .text h2 {
-  font-size: 15px;
+  font-size: 1.7vh;
   letter-spacing: 0.15em;
   margin-top: 10px;
 }
