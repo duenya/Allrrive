@@ -553,63 +553,123 @@ position: absolute;
 /*----------------------------------
   traffic section 
 ------------------------------------*/
+
 #section4{
   margin-right:-15px; 
   margin-left:-15px;
   overflow: hidden;
   position: relative;
 }
-.section4bg
-{
-  /*background-image: linear-gradient(-225deg, #7DE2FC 0%, #B9B6E5 100%);
-  background-color: rgba(178,237,206,0.75);*/
-  background-color: #B7DBD4;
+
+
+#traffic_bg {
+    background-image: url('../images/traffic_bg.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
-.Traffic
-{
-  padding-top: 5%;
-  height: 70vh;
+#traffic_lg_phone {
+    background-image: url('../images/traffic_lg_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
 
-.section4bg .text
-{
-  padding-top: 5%;
-  height: 100%;
+#traffic_sm_md_phone {
+    background-image: url('../images/traffic_sm_md_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
 }
-.section4bg h1{
+#traffic_xs_phone {
+    background-image: url('../images/traffic_xs_phone.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+
+.traffic{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.traffic .text{
+  position: absolute;
+  top: 25%;
+
+}
+
+.traffic h1{
   padding-top: 5px;
   letter-spacing: 0.05em;
-  color: #698E87;
+  color: #295ea4;
  font-family: 'Comfortaa', cursive;
-
-
+ font-size: 4vh;
 }
-.section4bg h2{
+.traffic h2{
   letter-spacing: 0.05em;
-  color: #315B53;
+  color: #ef6034;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-  font-size: large;
+   font-size: 2.3vh;
 }
-.section4bg p{
+.traffic p{
 
-  font-size: medium;
+  font-size: 1.7vh;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
 }
+.s4t{
+  position: absolute;
+  top: 10%;
+
+}
+.s4b{
+  position: absolute;
+  top: 75%;
+}
+
+
+
 
 /*----------------------------------
   Section 5 Downloand
 ------------------------------------*/
+
 #section5{
-  /*margin-right:-15px; 
+  margin-right:-15px; 
   margin-left:-15px;
   overflow: hidden;
-  position: relative;*/
-  margin-bottom: 15vh;
+  position: relative;
+  height: 50vh;
 }
+
+
+#download_bg {
+    background-image: url('../images/footer_bg.png');
+    background-position: center center;
+    margin-left: -15px;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    background-size: auto 100%;
+}
+
 .slogon h1
 {
    color: #022D41;
@@ -629,9 +689,11 @@ position: absolute;
 /*----------------------------------
   Footer
 ------------------------------------*/
+
 footer
 {
-  /*margin-top: 300px;*/
+  margin-right:-15px; 
+  margin-left:-15px;
   background-color: #022d41;
 }
 .line

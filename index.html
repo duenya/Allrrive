@@ -172,7 +172,7 @@
         </div>
       </section>
 
-      <!--Section 3 Map Viw-->
+      <!--Section 3 Map View-->
 
       <section class="section" id="section3">
         <div class="row">
@@ -219,70 +219,94 @@
 
      <!--Section 4 Traffic detection-->
       <section class="section" id="section4">
-        <div class="row ">
-          <div class="col-md-offset-6 col-md-4 col-xs-10 bubble">
-            <div class="speech-bubbleR" id="s4t">
-              <p><i>Ring* </i> Oh, Traffic? I should leave 10mins earlier.</p>
-            </div>
-          </div>
-        </div>
         <div class="row">
-          <div class="col-md-offset-2 col-md-8 col-xs-12 section4bg">
-            <div class="col-md-6 text-center text" id="s4text">
-              <h1>Traffic detection</h1>
-              <h2>It can predict the traffic</h2>
-              <p>Sometimes, everything just right, but...<br>
-              it rains, the train delay, traffic is so bad<br>
-            	Actually, we can help you! <br>
-        		the app will modify the reminder via traffic and weather.</p> 
+          <div class="col-md-12 col-sm-12 bg">
+            <div id="traffic_bg"></div>
+            <div class="visible-lg" id="traffic_lg_phone"></div>      
+            <div class="visible-sm visible-md" id="traffic_sm_md_phone"></div>
+            <div class="visible-xs" id="traffic_xs_phone"></div>
+            <!-- traffic text area-->
+            <div class="traffic">
+              <!-- S4t-->
+
+              <div class="row">
+		        <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s4t">
+		          <div class="speech-bubbleR" id="s4t">
+		            <p><i>Ring* </i> Oh, Traffic? I should leave 10mins earlier.</p>
+		          </div>
+		        </div>
+		      </div>
+		      <!--traffic intro-->
+		      <div class="row">
+	            <div class="col-md-offset-7 col-md-5 col-sm-offset-7 col-sm-5 col-xs-offset-6 col-xs-6 text" id="s4text">
+	              <h1>Traffic Alert</h1>
+	              <h2>It can tell the traffic</h2>
+	              <p>Sometimes, everything just right, but...<br>
+	              it rains, the train delay, traffic is so bad<br>
+	            	Actually, we can help you! <br>
+	        		the app will modify the reminder via traffic and weather.</p> 
+	            </div> 
+              </div>
+              <!-- S4b-->
+              <div class="row">
+              	<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble" id="s4b">
+	              	<p>&nbsp</p>
+	          	</div>
+	          </div>
+
             </div>
-            <div class="col-md-6 Traffic">
-              <img src="images/traffic.png" class="phone_size img-responsive center-block"  alt="">
-            </div>     
-          </div>
-        </div>
-        <div class="row bubble">
-          <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10" id="s4b">
-            <p>&nbsp</p>
           </div>
         </div>
       </section>
 
+
+
+     <!--Section 5 download-->
       <section class="section" id="section5">
         <div class="row">
-          <div class="col-md-12 slogon">
-            <h1>We are <b>Allrrive</b>! How about you?</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-offset-4 col-md-4 col-xs-12 goal avator">
-            <div class="col-md-3 col-xs-3" id="kateG">
-              <img src="images/Kate.jpg" class="img-responsive center-block" alt="person-kate-arrive">
-            </div>
-            <div class="col-md-3 col-xs-3" id="mayG">
-              <img src="images/May.jpg" class="img-responsive center-block" alt="person-may-arrive">
-            </div>
-            <div class="col-md-3 col-xs-3" id="johnG">
-              <img src="images/John.jpg" class="img-responsive center-block" alt="person-john-arrive">
-            </div>
-            <div class="col-md-3 col-xs-3" id="ericG">
-              <img src="images/Eric.jpg" class="img-responsive center-block" alt="person-eric-arrive">
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-10">
-            <div class="col-md-6 col-xs-12">
-              <br><img src="images/android.png" width="65%" class="img-responsive center-block"  alt="">
-            </div>
-            <div class="col-md-6 col-xs-12">
-              <br><img src="images/apple.png" width="65%" class="img-responsive center-block"  alt="">
+          <div class="col-md-12 col-sm-12 bg">
+            <div id="download_bg"></div>
+           
+            <!-- traffic text area-->
+            <div class="slogon">
+              <!-- S4t-->
+
+              <div class="row">
+		          <div class="col-md-12">
+		            <h1>We are <b>Allrrive</b>! How about you?</h1>
+		          </div>
+		          <div class="row">
+		          <div class="col-md-offset-4 col-md-4 col-xs-12 goal avator">
+		            <div class="col-md-3 col-xs-3" id="kateG">
+		              <img src="images/Kate.jpg" class="img-responsive center-block" alt="person-kate-arrive">
+		            </div>
+		            <div class="col-md-3 col-xs-3" id="mayG">
+		              <img src="images/May.jpg" class="img-responsive center-block" alt="person-may-arrive">
+		            </div>
+		            <div class="col-md-3 col-xs-3" id="johnG">
+		              <img src="images/John.jpg" class="img-responsive center-block" alt="person-john-arrive">
+		            </div>
+		            <div class="col-md-3 col-xs-3" id="ericG">
+		              <img src="images/Eric.jpg" class="img-responsive center-block" alt="person-eric-arrive">
+		            </div>
+		          </div>
+		        </div>
+		        <div class="row">
+		          <div class="col-md-offset-4 col-md-4 col-xs-offset-1 col-xs-10">
+		            <div class="col-md-6 col-xs-12">
+		              <br><img src="images/android.png" width="65%" class="img-responsive center-block"  alt="">
+		            </div>
+		            <div class="col-md-6 col-xs-12">
+		              <br><img src="images/apple.png" width="65%" class="img-responsive center-block"  alt="">
+		            </div>
+		          </div>
+		        </div>
+		       </div>
+
             </div>
           </div>
         </div>
       </section>
-
-    </div>
 
 
       <footer>
