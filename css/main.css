@@ -12,7 +12,7 @@ html, body {
   text-rendering: optimizeLegibility;
   color: #222;
   overflow-x: hidden;
-  background-image: url("../images/map.png");
+  
 }
 h4 {
   font-size: 22px;
@@ -32,6 +32,17 @@ a:visited {
 .section {
   position: relative;
 }
+
+.longbg {
+  position: absolute;
+  width: 100%;
+  background-image: url("../images/background.png");
+  background-position: center center;
+  height: 450vh;
+  background-size: auto 100%;
+}
+.main
+{overflow: hidden;}
 /*----------------------------------
   Side nav
 ------------------------------------*/
@@ -76,7 +87,7 @@ a:visited {
     height: 100vh;
     overflow: hidden;
     position: relative;
-    background-color: white;
+
 }
 #bgSkyline {
     background-image: url('../images/background1.png');
