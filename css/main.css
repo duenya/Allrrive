@@ -95,7 +95,7 @@ a:visited {
   width: 100%;
   background-image: url("../images/background.png");
   background-position: center center;
-  height: 460vh;
+  height: 450vh;
   background-size: auto 100%;
 }
 
@@ -104,7 +104,6 @@ a:visited {
   avatar
 ------------------------------------*/
 .avator{
-  height: 460vh;
   overflow: hidden;
 }
 .avatar .rellax{
@@ -251,7 +250,7 @@ top: 195vh;
 ------------------------------------*/
 .main{
   overflow: hidden;
-  height: 460vh;
+  /*height: 460vh;*/
 }
 /*background transport animation*/
 @keyframes slideleft {
@@ -728,12 +727,14 @@ position: absolute;
    color: #022D41;
    font-family: 'Comfortaa', cursive;
    text-align: center;
+  font-size: 4.5vh;
 }
 .goal{
   margin-top: 10px;
   margin-bottom: 10px;
-  height: 60px;
 }
+.slogon .link img
+{width: 18vw;}
 /*
 .goal img{
   visibility: hidden;
