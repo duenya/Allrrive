@@ -88,66 +88,62 @@ a:visited {
   height: 100%;
 }
 .avatar .big img{
-  width: 60px;
-  height:60px;
-  -webkit-border-radius: 30px; /* Saf3+, Chrome */
-  border-radius: 30px; 
-  border: 3px solid #3b5998 ;
-  box-shadow: 1px 1px 2px #484848;
+    height: 8vh;
+    border-radius: 60px;
+    border: 3px solid #3b5998;
+    box-shadow: 1px 1px 1px #484848;
+    opacity: 0.7;
 }
 
 .avatar .md img{
-  width: 45px;
-  height:45px;
-  -webkit-border-radius: 30px; /* Saf3+, Chrome */
-  border-radius: 30px; 
-  border: 2px solid #3b5998 ;
-  box-shadow: 1px 1px 2px #484848;
+    height: 6.5vh;
+    -webkit-border-radius: 30px;
+    border-radius: 60px;
+    border: 2px solid #3b5998;
+    box-shadow: 1px 1px 1px #484848;
+    opacity: 0.6;
 }
 
 .avatar .sm img{
-  width: 30px;
-  height:30px;
-  -webkit-border-radius: 30px; /* Saf3+, Chrome */
-  border-radius: 30px; 
-  border: 1px solid #3b5998 ;
-  box-shadow: 1px 1px 2px #484848;
+    height: 5vh;
+    -webkit-border-radius: 30px;
+    border-radius: 60px;
+    border: 1px solid #3b5998;
+    box-shadow: 1px 1px 1px #484848;
+    opacity: 0.5;
 }
 
 .may {
-
   top: 85vh;
 }
 
 
 .john {
-  top: 110vh;
+  top: 100vh;
 }
 
 .josh{
-  top: 130vh;
+  top: 110vh;
 }
 .june
 {
-top: 155vh;
+top: 130vh;
 }
 .nani{
-top: 175vh;
+top: 155vh;
 }
 .macy{
-top: 190vh;
+top: 170vh;
 }
 .paul{
-top: 205vh;
+top: 195vh;
 }
 .kate {
-  top: 215vh;
-  right: 15px; 
+  top: 205vh; 
 }
 
 .eric {
-  top: 225vh;
-  right: 15px; 
+  top: 210vh; 
 }
 .bubble{
   height: 15vh;
