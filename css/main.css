@@ -136,28 +136,10 @@ a:visited {
 #i2
 {background-image: url(../images/item2.png);
 height: 25vh;}
-#i3
+#i3,#i4,#i5
 {background-image: url(../images/item345.png);
 height: 25vh;}
-#i4
-{background-image: url(../images/item345.png);
-height: 25vh;}
-#i5
-{background-image: url(../images/item345.png);
-height: 25vh;}
-#i6
-{background-image: url(../images/item678910.png);
-height: 25vh;}
-#i7
-{background-image: url(../images/item678910.png);
-height: 25vh;}
-#i8
-{background-image: url(../images/item678910.png);
-height: 25vh;}
-#i9
-{background-image: url(../images/item678910.png);
-height: 25vh;}
-#i10
+#i6,#i7,#i8,#i9,#i10
 {background-image: url(../images/item678910.png);
 height: 25vh;}
 #i11
