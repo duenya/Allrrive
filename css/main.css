@@ -164,8 +164,8 @@ height: 25vh;}
     height: 8vh;
     border-radius: 60px;
     border: 3px solid #3b5998;
-    box-shadow: 1px 1px 1px #484848;
-    opacity: 0.7;
+    /*box-shadow: 1px 1px 1px #484848;*/
+    opacity: 0.5;
 }
 
 .avatar .md img{
@@ -173,8 +173,8 @@ height: 25vh;}
     -webkit-border-radius: 30px;
     border-radius: 60px;
     border: 2px solid #3b5998;
-    box-shadow: 1px 1px 1px #484848;
-    opacity: 0.6;
+    /*box-shadow: 1px 1px 1px #484848;*/
+    opacity: 0.4;
 }
 
 .avatar .sm img{
@@ -182,8 +182,8 @@ height: 25vh;}
     -webkit-border-radius: 30px;
     border-radius: 60px;
     border: 1px solid #3b5998;
-    box-shadow: 1px 1px 1px #484848;
-    opacity: 0.5;
+    /*box-shadow: 1px 1px 1px #484848;*/
+    opacity: 0.3;
 }
 
 .may {

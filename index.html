@@ -257,7 +257,7 @@
             <div class="map">
               <!-- S3t-->
               <div class="row">
-                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s3t" id="s3t">
+                <div class="col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s3t" id="s3t">
                   <div class='head'>
                     <img src="images/Jason.jpg" class="img-responsive center-block speakHeadB">
                   </div>
@@ -304,7 +304,7 @@
             <div class="traffic">
               <!-- S4t-->
               <div class="row">
-                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s4t" id="s4t">
+                <div class="col-md-offset-8 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s4t" id="s4t">
                   <div class='head'>
                     <img src="images/Jason.jpg" class="img-responsive center-block speakHeadB">
                   </div>
@@ -412,7 +412,7 @@
     var s4text = $('#s4text').parent().offset().top;
     $(document).scroll(function() {
       var y = $(this).scrollTop();
-      if (y > (s1b-75) && y < s1b+0.15*W+75) {
+      if (y > (s1b-0.5*W) && y < s1b+0.5*W) {
         $("#s1b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s1b .bubbleTextY").css({"width": "180px"});
         $("#s1b .bubbleSpanY").css({"opacity": "1","top": "0"});
@@ -422,7 +422,7 @@
         $("#s1b .bubbleTextY").css({"width": "0","height":"60px"});
         $("#s1b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (y > s2t-100 && y < s2t+0.15*W+100) {
+      if (y > s2t-0.5*W && y < s2t+0.5*W) {
         $("#s2t .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s2t .bubbleTextY").css({"width": "180px"});
         $("#s2t .bubbleSpanY").css({"opacity": "1","top": "0"});
@@ -432,7 +432,7 @@
         $("#s2t .bubbleTextY").css({"width": "0","height":"60px"});
         $("#s2t .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (y > s2b-75 && y < s2b+0.15*W+75) {
+      if (y > s2b-0.5*W && y < s2b+0.5*W) {
         $("#s2b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s2b .bubbleTextY").css({"width": "180px"});
         $("#s2b .bubbleSpanY").css({"opacity": "1","top": "0"});
@@ -442,7 +442,7 @@
         $("#s2b .bubbleTextY").css({"width": "0","height":"60px"});
         $("#s2b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (y > s3t-50 && y < s3t+0.15*W+75) {
+      if (y > s3t-0.5*W && y < s3t+0.5*W) {
         $("#s3t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s3t .bubbleTextB").css({"width": "180px"});
         $("#s3t .bubbleSpanB").css({"opacity": "1","top": "0"});
@@ -452,7 +452,7 @@
         $("#s3t .bubbleTextB").css({"width": "0","height":"60px"});
         $("#s3t .bubbleSpanB").css({"opacity": "0","top": "-30px"});
       }
-      if (y > s3b-75 && y < s3b+0.15*W+75) {
+      if (y > s3b-0.5*W && y < s3b+0.5*W) {
         $("#s3b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s3b .bubbleTextY").css({"width": "180px"});
         $("#s3b .bubbleSpanY").css({"opacity": "1","top": "0"});
@@ -462,7 +462,7 @@
         $("#s3b .bubbleTextY").css({"width": "0","height":"60px"});
         $("#s3b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (y > s4t-75 && y < s4t+0.15*W+75) {
+      if (y > s4t-0.5*W && y < s4t+0.5*W) {
         $("#s4t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
         $("#s4t .bubbleTextB").css({"width": "180px"});
         $("#s4t .bubbleSpanB").css({"opacity": "1","top": "0"});
