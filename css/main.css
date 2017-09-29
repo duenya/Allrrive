@@ -237,8 +237,8 @@ top: 195vh;
 .bubble .head {
   position: relative;
   line-height: 30px;
-  width: 60px;
-  height: 60px;
+  width:  8vh;
+  height: 8vh;
   text-align: center;
   color: #fff;
   font-size: 18px;
@@ -248,8 +248,8 @@ top: 195vh;
 }
 
 .bubble .head .speakHeadY {
-  width: 60px;
-  height: 60px;
+  width: 8vh;
+  height: 8vh;
   border-radius: 60px;
   -webkit-transition: .2s all;
   transition: .2s all;
@@ -276,8 +276,8 @@ top: 195vh;
 }
 
 .bubble .head .speakHeadB {
-  width: 60px;
-  height: 60px;
+  width: 8vh;
+  height: 8vh;
   border-radius: 60px;
   -webkit-transition: .2s all;
   transition: .2s all;
