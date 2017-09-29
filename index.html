@@ -308,24 +308,13 @@
             <!-- slogon text area-->
             <div class="slogon">
               <div class="row">
-		            <div class="col-md-12">
+		            <div class="col-sm-offset-1 col-sm-10">
 		              <h1>We are <b>Allrrive</b>! How about you?</h1>
 		            </div>
               </div>
 		          <div class="row">
-		            <div class="col-md-offset-4 col-md-4 col-xs-12 goal avatar">
-		              <div class="col-md-3 col-xs-3 big" id="kateG">
-		                <img src="images/Kate.jpg" class="img-responsive center-block" alt="person-kate-arrive">
-		              </div>
-		              <div class="col-md-3 col-xs-3 big" id="mayG">
-		                <img src="images/May.jpg" class="img-responsive center-block" alt="person-may-arrive">
-		              </div>
-		              <div class="col-md-3 col-xs-3 big" id="johnG">
-		                <img src="images/John.jpg" class="img-responsive center-block" alt="person-john-arrive">
-		              </div>
-		              <div class="col-md-3 col-xs-3 big" id="ericG">
-		                <img src="images/Eric.jpg" class="img-responsive center-block" alt="person-eric-arrive">
-		              </div>
+		            <div class="col-lg-offset-3 col-lg-6 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12 goal avatar" id="goal">        
+		                <img src="images/all-arrive.png" class="img-responsive center-block" alt="people-all-arrive">
 		            </div>
 		          </div>
 		          <div class="row">
@@ -440,10 +429,7 @@
         $( "#Kate" ).fadeOut();
         $( "#John" ).fadeOut();
         $( "#Eric" ).fadeOut();
-        $( "#mayG" ).fadeIn();
-        $( "#kateG" ).fadeIn();
-        $( "#johnG" ).fadeIn();
-        $( "#ericG" ).fadeIn();
+        $( "#goal" ).fadeIn();
       }
       else
       {
@@ -451,10 +437,7 @@
         $( "#Kate" ).fadeIn();
         $( "#John" ).fadeIn();
         $( "#Eric" ).fadeIn();
-        $( "#mayG" ).fadeOut();
-        $( "#kateG" ).fadeOut();
-        $( "#johnG" ).fadeOut();
-        $( "#ericG" ).fadeOut();
+        $( "#goal" ).fadeOut();
       }
     });
 

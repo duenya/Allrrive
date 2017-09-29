@@ -720,19 +720,19 @@ position: absolute;
   position: relative;
   height: 50vh;
 }
-
+.slogon{
+    
+}
 
 .slogon h1
 {
+
    color: #022D41;
    font-family: 'Comfortaa', cursive;
    text-align: center;
   font-size: 4.5vh;
 }
-.goal{
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
+
 .slogon .link img
 {width: 18vw;}
 /*
