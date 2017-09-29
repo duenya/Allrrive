@@ -82,7 +82,7 @@
     <!--Avatar parallax-->
     <div class="container-fluid avatar" id="avatar">
       <div class="row">
-        <div class="col-md-12 col-sm-12 col-xs-12 visible-lg visible-md visible-sm visible-xs">
+        <div class="col-md-8 col-sm-8 col-xs-11 visible-lg visible-md visible-sm visible-xs">
           <div class="may rellax big" data-rellax-speed="-4">
             <img src="images/May.jpg" class="img-responsive center-block" id="May" alt="person-may">
           </div>
@@ -176,17 +176,14 @@
                   </div>
                 </div> 
               </div>
-              <!--avator talking
+              <!--avator talking-->
               <div class="row">
-                <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble" id="s1b">
-                  <div class='head'>
-                    <img src="images/bac.jpg" class="img-responsive center-block speakHeadY">
-                  </div>
-                  <div class='bubbletext bubbleTextY'>
-                    <span class="bubbleSpanY">Muh...So sleepy, but I should start preparing.</span>
-                  </div>
+                <div class="col-xs-12 hint bounce">
+ 
+                    <img src="images/bac.jpg" class="img-responsive center-block" id="s1b">
+              
                 </div>
-              </div>-->
+              </div>
 
             </div>
           </div>
@@ -403,7 +400,7 @@
 
   <script>
     var W = $( window ).height();
-    //var s1b = $('#s1b').parent().offset().top;
+    var s1b = $('#s1b').parent().offset().top;
     var s2t = $('#s2t').parent().offset().top;
     var s2b = $('#s2b').parent().offset().top;
     var s3t = $('#s3t').parent().offset().top;
@@ -412,63 +409,59 @@
     var s4text = $('#s4text').parent().offset().top;
     $(document).scroll(function() {
       var y = $(this).scrollTop();
-      //if (y > (s1b-0.5*W) && y < s1b+0.5*W) {
-        //$("#s1b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
-        //$("#s1b .bubbleTextY").css({"width": "180px"});
-        //$("#s1b .bubbleSpanY").css({"opacity": "1","top": "0"});
-      //} 
-      //else {
-        //$("#s1b .speakHeadY").css({"color": "#fff", "border-radius": "30px"});
-        //$("#s1b .bubbleTextY").css({"width": "0","height":"60px"});
-        //$("#s1b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
-      //}
+      if (y > (s1b-0.2*W) && y < s1b+0.2*W) {
+        $("#s1b").fadeOut();
+      } 
+      else {
+        $("#s1b").fadeIn();
+      }
       if (y > s2t-0.5*W && y < s2t+0.5*W) {
-        $("#s2t .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px"});
+        $("#s2t .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px","filter":"none","-webkit-filter":"none"});
         $("#s2t .bubbleTextY").css({"width": "24vh"});
         $("#s2t .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $("#s2t .speakHeadY").css({"color": "#fff", "border-radius": "60px"});
+        $("#s2t .speakHeadY").css({"color": "#fff", "border-radius": "60px","filter":"grayscale(100%)","-webkit-filter":"grayscale(100%)"});
         $("#s2t .bubbleTextY").css({"width": "0","height":"8vh"});
         $("#s2t .bubbleSpanY").css({"opacity": "0","top": "-60px"});
       }
       if (y > s2b-0.5*W && y < s2b+0.5*W) {
-        $("#s2b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px"});
+        $("#s2b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px","filter":"none","-webkit-filter":"none"});
         $("#s2b .bubbleTextY").css({"width": "24vh"});
         $("#s2b .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $("#s2b .speakHeadY").css({"color": "#fff", "border-radius": "60px"});
+        $("#s2b .speakHeadY").css({"color": "#fff", "border-radius": "60px","filter":"grayscale(100%)","-webkit-filter":"grayscale(100%)"});
         $("#s2b .bubbleTextY").css({"width": "0","height":"8vh"});
         $("#s2b .bubbleSpanY").css({"opacity": "0","top": "-60px"});
       }
       if (y > s3t-0.5*W && y < s3t+0.5*W) {
-        $("#s3t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px"});
+        $("#s3t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px","filter":"none","-webkit-filter":"none"});
         $("#s3t .bubbleTextB").css({"width": "24vh"});
         $("#s3t .bubbleSpanB").css({"opacity": "1","top": "0"});
       } 
       else {
-        $("#s3t .speakHeadB").css({"color": "#fff", "border-radius": "60px"});
+        $("#s3t .speakHeadB").css({"color": "#fff", "border-radius": "60px","filter":"grayscale(100%)","-webkit-filter":"grayscale(100%)"});
         $("#s3t .bubbleTextB").css({"width": "0","height":"8vh"});
         $("#s3t .bubbleSpanB").css({"opacity": "0","top": "-60px"});
       }
       if (y > s3b-0.5*W && y < s3b+0.5*W) {
-        $("#s3b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px"});
+        $("#s3b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px","filter":"none","-webkit-filter":"none"});
         $("#s3b .bubbleTextY").css({"width": "24vh"});
         $("#s3b .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $("#s3b .speakHeadY").css({"color": "#fff", "border-radius": "60px"});
+        $("#s3b .speakHeadY").css({"color": "#fff", "border-radius": "60px","filter":"grayscale(100%)","-webkit-filter":"grayscale(100%)"});
         $("#s3b .bubbleTextY").css({"width": "0","height":"8vh"});
         $("#s3b .bubbleSpanY").css({"opacity": "0","top": "-60px"});
       }
       if (y > s4t-0.5*W && y < s4t+0.5*W) {
-        $("#s4t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px"});
+        $("#s4t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "60px","border-bottom-left-radius": "60px","filter":"none","-webkit-filter":"none"});
         $("#s4t .bubbleTextB").css({"width": "24vh"});
         $("#s4t .bubbleSpanB").css({"opacity": "1","top": "0"});
       } 
       else {
-        $("#s4t .speakHeadB").css({"color": "#fff", "border-radius": "60px"});
+        $("#s4t .speakHeadB").css({"color": "#fff", "border-radius": "60px","filter":"grayscale(100%)","-webkit-filter":"grayscale(100%)"});
         $("#s4t .bubbleTextB").css({"width": "0","height":"8vh"});
         $("#s4t .bubbleSpanB").css({"opacity": "0","top": "-60px"});
       }
