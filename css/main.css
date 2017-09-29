@@ -128,23 +128,54 @@ a:visited {
   opacity: 0;
 }
  
- 
-  
-#i1
+#l1
 {background-image: url(../images/item1.png);
   height: 100vh;}
-#i2
+#l2
 {background-image: url(../images/item2.png);
 height: 25vh;}
-#i3,#i4,#i5
-{background-image: url(../images/item345.png);
+#l3,#l4,#l5,#l6
+{background-image: url(../images/item3456.png);
 height: 25vh;}
-#i6,#i7,#i8,#i9,#i10
-{background-image: url(../images/item678910.png);
+#l7,#l8,#l9,#l10
+{background-image: url(../images/item78910.png);
 height: 25vh;}
-#i11
+#l11
 {background-image: url(../images/item11.png);
 height: 25vh;}
+
+#m1
+{background-image: url(../images/item1.png);
+  height: 100vh;}
+#m2
+{background-image: url(../images/md2.png);
+height: 25vh;}
+#m3,#m4,#m5,#m6
+{background-image: url(../images/md3456.png);
+height: 25vh;}
+#m7,#m8,#m9,#m10
+{background-image: url(../images/md78910.png);
+height: 25vh;}
+#m11
+{background-image: url(../images/md11.png);
+height: 25vh;}
+
+#x1
+{background-image: url(../images/item1.png);
+  height: 100vh;}
+#x2
+{background-image: url(../images/xs2.png);
+height: 25vh;}
+#x3,#x4,#x5,#x6
+{background-image: url(../images/xs3456.png);
+height: 25vh;}
+#x7,#x8,#x9,#x10
+{background-image: url(../images/xs78910.png);
+height: 25vh;}
+#x11
+{background-image: url(../images/xs11.png);
+height: 25vh;}
+
 
 /*----------------------------------
   avatar
