@@ -305,17 +305,16 @@ top: 195vh;
 
 
 .bubble .bubbletext span {
-  width: 100%;
+  width: 90%;
   opacity: 0;
   position: absolute;
-  top: -30px;
-  left: 55%;
-  padding-top: 10px;
-  padding-right: 12px; 
+  padding: 2.5% !important;
+  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   -webkit-transition: .3s all;
   transition: .3s all;
+  font-size: 2vh;
 }
 
 
@@ -630,6 +629,7 @@ position: absolute;
 .reminder .text{
   position: absolute;
   top: 35%;
+  background-color: rgba(255,255,255,0.6);
 
 }
 
@@ -724,7 +724,7 @@ position: absolute;
   position: absolute;
   top: 35%;
   padding-left: 20px;
-
+  background-color: rgba(255,255,255,0.6);
 }
 
 .map h1{
@@ -819,7 +819,7 @@ position: absolute;
 .traffic .text{
   position: absolute;
   top: 25%;
-
+  background-color: rgba(255,255,255,0.6);
 }
 
 .traffic h1{
