@@ -187,7 +187,7 @@ height: 25vh;}
 }
 
 .may {
-  top: 85vh;
+  top: 100vh;
 }
 
 
@@ -271,8 +271,8 @@ top: 195vh;
   font-weight: 300;
   -webkit-transition: .5s all;
   transition: .5s all;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 .bubble .head .speakHeadB {
@@ -299,8 +299,8 @@ top: 195vh;
   font-weight: 300;
   -webkit-transition: .5s all;
   transition: .5s all;
-  border-top-right-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-top-right-radius: 60px;
+  border-bottom-right-radius: 60px;
 }
 
 
@@ -645,11 +645,11 @@ position: absolute;
   color: #ef6034;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-   font-size: 2.3vh;
+   font-size: 2.4vh;
 }
 .reminder p{
 
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -739,11 +739,11 @@ position: absolute;
   color: #ef6034;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-   font-size: 2.3vh;
+   font-size: 2.4vh;
 }
 .map p{
 
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
@@ -834,11 +834,11 @@ position: absolute;
   color: #ef6034;
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
-   font-size: 2.3vh;
+   font-size: 2.4vh;
 }
 .traffic p{
 
-  font-size: 1.7vh;
+  font-size: 1.9vh;
   color: #484848;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
