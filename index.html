@@ -62,7 +62,7 @@
 
 
     <!--Avatar parallax-->
-    <div class="container-fluid avatar">
+    <div class="container-fluid avatar" id="avatar">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 visible-lg visible-md visible-sm visible-xs">
           <div class="may rellax big" data-rellax-speed="-4">
@@ -425,18 +425,18 @@
         $('#s4t').fadeOut();
       }
       if (y > s4text + 0.2*W){
-        $( "#May" ).fadeOut();
-        $( "#Kate" ).fadeOut();
-        $( "#John" ).fadeOut();
-        $( "#Eric" ).fadeOut();
+        $( "#avatar" ).fadeOut();
+        //$( "#Kate" ).fadeOut();
+        //$( "#John" ).fadeOut();
+        //$( "#Eric" ).fadeOut();
         $( "#goal" ).fadeIn();
       }
       else
       {
-        $( "#May" ).fadeIn();
-        $( "#Kate" ).fadeIn();
-        $( "#John" ).fadeIn();
-        $( "#Eric" ).fadeIn();
+        $( "#avatar" ).fadeIn();
+        //$( "#Kate" ).fadeIn();
+        //$( "#John" ).fadeIn();
+        //$( "#Eric" ).fadeIn();
         $( "#goal" ).fadeOut();
       }
     });

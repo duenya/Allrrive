@@ -809,64 +809,6 @@ footer .icon a i {
 
 
 
-/*background transport animation*/
-/*
-@keyframes dawdling {
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(0%);}
-}
-@-webkit-keyframes dawdling {
-  0% {transform: translateY(100%);}
-  100% {transform: translateY(0%);}
-}
-*/
-
-@keyframes dawdling {
-    0%{transform: translateX(-100%); } 
-}
-@-webkit-keyframes dawdling {
-  0%{transform: translateX(-100%); } 
-}
-
-
-#dressup {
-
-    background-image: url('../images/dress-up.png');
-    /*
-    background-repeat: repeat-x;
-    animation: dawdling 10s linear;
-    -webkit-animation: dawdling 10s linear;*/
-    width: 416vh;
-    left: -416vh;
-    position: absolute;
-    height: 100vh;
-    background-size: cover;
-}
-
-.dawdling{
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-
-}
-#dawdling_text {
-  top:10%; 
-  left: -100%;
-  z-index: 2;
-  overflow: hidden;
-  position: absolute;
-}
-.late{
-    height: 100vh;
-    overflow: hidden;
-    position: relative;
-}
-
-
-
-
-
-
 
 
 /*----------------------------------
