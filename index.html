@@ -178,9 +178,12 @@
               </div>
               <!--avator talking-->
               <div class="row">
-                <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble">
-                  <div class="speech-bubbleL" id="s1b">
-                    <p>Muh...So sleepy, but I should start preparing.</p>
+                <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble" id="s1b">
+                  <div class='head'>
+                    <img src="images/bac.jpg" class="img-responsive center-block speakHeadY">
+                  </div>
+                  <div class='bubbletext bubbleTextY'>
+                    <span class="bubbleSpanY">Muh...So sleepy, but I should start preparing.</span>
                   </div>
                 </div>
               </div>
@@ -205,10 +208,13 @@
             <div class="reminder">
               <!-- S2t-->
               <div class="row">
-		            <div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-6 col-xs-7 bubble s2t">
-		              <div class="speech-bubbleL" id="s2t">
-		                <p>Let's see how's everyone going.</p>
-		              </div>
+		            <div class="col-md-offset-2 col-md-4 col-sm-offset-1 col-sm-6 col-xs-7 bubble s2t" id="s2t">
+                  <div class='head'>
+                    <img src="images/bac.jpg" class="img-responsive center-block speakHeadY">
+                  </div>
+                  <div class='bubbletext bubbleTextY'>
+                    <span class="bubbleSpanY">Let's see how's everyone going.</span>
+                  </div>
 		            </div>
 		          </div>
 		          <!--reminder intro-->
@@ -225,11 +231,14 @@
               </div>
               <!-- S2b-->
               <div class="row">
-              	<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble s2b">
-                  <div class="speech-bubbleL" id="s2b">
-                    <p>Hmm, John doesn't show as wake up, I should call him.</p>
+                <div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble s2b" id="s2b">
+                  <div class='head'>
+                    <img src="images/bac.jpg" class="img-responsive center-block speakHeadY">
                   </div>
-	          	  </div>
+                  <div class='bubbletext bubbleTextY'>
+                    <span class="bubbleSpanY">John doesn't show as wake up, I should call him.</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -248,10 +257,13 @@
             <div class="map">
               <!-- S3t-->
               <div class="row">
-                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s3t">
-                  <div class="speech-bubbleR" id="s3t">
-                    <p>Err...I'm I'm on the way there.</p>
-		              </div>
+                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s3t" id="s3t">
+                  <div class='head'>
+                    <img src="images/Jason.jpg" class="img-responsive center-block speakHeadB">
+                  </div>
+                  <div class='bubbletext bubbleTextB'>
+                    <span class="bubbleSpanB">Err...I'm I'm on the way there.</span>
+                  </div>
 		            </div>
 		          </div>
 		          <!--reminder intro-->
@@ -267,10 +279,13 @@
               </div>
               <!-- s3b-->
               <div class="row">
-              	<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble s3b">
-	                <div class="speech-bubbleL" id="s3b">
-	              	  <p>Ha! I know you are still at your place. Get up! Quick!</p>
-	                </div>
+              	<div class="col-md-offset-2 col-md-4 col-xs-offset-2 col-xs-10 bubble s3b" id="s3b">
+                  <div class='head'>
+                    <img src="images/bac.jpg" class="img-responsive center-block speakHeadY">
+                  </div>
+                  <div class='bubbletext bubbleTextY'>
+                    <span class="bubbleSpanY">Ha! I know you are still at your place. Get up! Quick!</span>
+                  </div>
 	          	  </div>
               </div>
             </div>
@@ -289,10 +304,13 @@
             <div class="traffic">
               <!-- S4t-->
               <div class="row">
-                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s4t">
-		              <div class="speech-bubbleR" id="s4t">
-		                <p><i>*Ring*</i> Oh, Traffic? I should leave 10mins earlier.</p>
-		              </div>
+                <div class="col-md-offset-6 col-md-4 col-sm-offset-7 col-sm-5 col-xs-offset-5 col-xs-7 bubble s4t" id="s4t">
+                  <div class='head'>
+                    <img src="images/Jason.jpg" class="img-responsive center-block speakHeadB">
+                  </div>
+                  <div class='bubbletext bubbleTextB'>
+                    <span class="bubbleSpanB"><i>*Ring*</i> Oh, Traffic? I should leave 10mins earlier.</span>
+                  </div>
 		            </div>
 		          </div>
 		          <!--traffic intro-->
@@ -385,11 +403,6 @@
 
   <script>
     var W = $( window ).height();
-    var H = $( document ).height();
-    var May = $('#May');
-    var John = $('#John');
-    var Eric = $('#Eric');
-    var Kate = $('#Kate');
     var s1b = $('#s1b').parent().offset().top;
     var s2t = $('#s2t').parent().offset().top;
     var s2b = $('#s2b').parent().offset().top;
@@ -397,68 +410,79 @@
     var s3b = $('#s3b').parent().offset().top;
     var s4t = $('#s4t').parent().offset().top;
     var s4text = $('#s4text').parent().offset().top;
-    //console.log(s4b);
-    //console.log(endpage);
-  //var positionL = goal.offset().left;
     $(document).scroll(function() {
-      var MayP = May.offset().top;
-      var JohnP = John.offset().top;
-      var EricP = Eric.offset().top;
       var y = $(this).scrollTop();
-      if (MayP > (s1b-75) && MayP < s1b+0.15*W+75) {
-        $('#s1b').fadeIn();
-        $("#s1b").css("visibility", "visible");
+      if (y > (s1b-75) && y < s1b+0.15*W+75) {
+        $("#s1b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s1b .bubbleTextY").css({"width": "180px"});
+        $("#s1b .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s1b').fadeOut();
+        $("#s1b .speakHeadY").css({"color": "#fff", "border-radius": "30px"});
+        $("#s1b .bubbleTextY").css({"width": "0","height":"60px"});
+        $("#s1b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (MayP > s2t-75 && MayP < s2t+0.15*W+75) {
-        $('#s2t').fadeIn();
+      if (y > s2t-100 && y < s2t+0.15*W+100) {
+        $("#s2t .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s2t .bubbleTextY").css({"width": "180px"});
+        $("#s2t .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s2t').fadeOut();
+        $("#s2t .speakHeadY").css({"color": "#fff", "border-radius": "30px"});
+        $("#s2t .bubbleTextY").css({"width": "0","height":"60px"});
+        $("#s2t .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (MayP > s2b-75 && MayP < s2b+0.15*W+75) {
-        $('#s2b').fadeIn();
+      if (y > s2b-75 && y < s2b+0.15*W+75) {
+        $("#s2b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s2b .bubbleTextY").css({"width": "180px"});
+        $("#s2b .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s2b').fadeOut();
+        $("#s2b .speakHeadY").css({"color": "#fff", "border-radius": "30px"});
+        $("#s2b .bubbleTextY").css({"width": "0","height":"60px"});
+        $("#s2b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (JohnP > s3t-50 && JohnP < s3t+0.15*W+75) {
-        $('#s3t').fadeIn();
+      if (y > s3t-50 && y < s3t+0.15*W+75) {
+        $("#s3t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s3t .bubbleTextB").css({"width": "180px"});
+        $("#s3t .bubbleSpanB").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s3t').fadeOut();
+        $("#s3t .speakHeadB").css({"color": "#fff", "border-radius": "30px"});
+        $("#s3t .bubbleTextB").css({"width": "0","height":"60px"});
+        $("#s3t .bubbleSpanB").css({"opacity": "0","top": "-30px"});
       }
-      if (MayP > s3b-75 && MayP < s3b+0.15*W+75) {
-        $('#s3b').fadeIn();
+      if (y > s3b-75 && y < s3b+0.15*W+75) {
+        $("#s3b .speakHeadY").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s3b .bubbleTextY").css({"width": "180px"});
+        $("#s3b .bubbleSpanY").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s3b').fadeOut();
+        $("#s3b .speakHeadY").css({"color": "#fff", "border-radius": "30px"});
+        $("#s3b .bubbleTextY").css({"width": "0","height":"60px"});
+        $("#s3b .bubbleSpanY").css({"opacity": "0","top": "-30px"});
       }
-      if (JohnP > s4t-75 && JohnP < s4t+0.15*W+75) {
-        $('#s4t').fadeIn();
+      if (y > s4t-75 && y < s4t+0.15*W+75) {
+        $("#s4t .speakHeadB").css({"color": "#F34541", "border-radius": "0","border-top-left-radius": "30px","border-bottom-left-radius": "30px"});
+        $("#s4t .bubbleTextB").css({"width": "180px"});
+        $("#s4t .bubbleSpanB").css({"opacity": "1","top": "0"});
       } 
       else {
-        $('#s4t').fadeOut();
+        $("#s4t .speakHeadB").css({"color": "#fff", "border-radius": "30px"});
+        $("#s4t .bubbleTextB").css({"width": "0","height":"60px"});
+        $("#s4t .bubbleSpanB").css({"opacity": "0","top": "-30px"});
       }
       if (y > s4text + 0.2*W){
         $( "#avatar" ).fadeOut();
-        //$( "#Kate" ).fadeOut();
-        //$( "#John" ).fadeOut();
-        //$( "#Eric" ).fadeOut();
         $( "#goal" ).fadeIn();
       }
       else
       {
         $( "#avatar" ).fadeIn();
-        //$( "#Kate" ).fadeIn();
-        //$( "#John" ).fadeIn();
-        //$( "#Eric" ).fadeIn();
         $( "#goal" ).fadeOut();
       }
     });
-
+  
 
   </script> 
 

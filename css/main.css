@@ -218,6 +218,108 @@ top: 195vh;
 .eric {
   top: 210vh; 
 }
+
+/*----------------------------------
+  speech bubble
+------------------------------------*/
+.bubble {
+}
+
+.bubble {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 0;
+  background: transparent;
+  outline: 0;
+  overflow: hidden;
+}
+.bubble .head {
+  position: relative;
+  line-height: 30px;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  -webkit-transition: .2s color;
+  transition: .2s color;
+  border-radius: 60px;
+}
+
+.bubble .head .speakHeadY {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  border: 2px solid #F2BB6E;
+
+}
+
+.bubble .bubbleTextY {
+
+  position: relative;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  background: #F2BB6E;
+  text-align: left;
+  line-height: 20px;
+  color: #484848;
+  font-weight: 300;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.bubble .head .speakHeadB {
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+  border: 2px solid #4A90E2;
+
+}
+
+.bubble .bubbleTextB {
+
+  position: relative;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  font-family: "Roboto", sans-serif;
+  background: #4A90E2;
+  text-align: left;
+  line-height: 20px;
+  color: #484848;
+  font-weight: 300;
+  -webkit-transition: .5s all;
+  transition: .5s all;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+
+.bubble .bubbletext span {
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: -30px;
+  left: 55%;
+  padding-top: 10px;
+  padding-right: 12px; 
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transition: .3s all;
+  transition: .3s all;
+}
+
+
+/*
 .bubble{
   height: 15vh;
 }
@@ -289,7 +391,7 @@ top: 195vh;
   width: auto;
 
 }
-
+*/
 
 /*----------------------------------
   Home Section (section 1)
